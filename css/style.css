@@ -3,14 +3,20 @@
 *:after{
 	box-sizing: border-box;
 }
+html, body{
+	min-height: 100%;
+}
+html{
+	height: 100%;
+}
 body{
 	font: 400 17px/1.8 Raleway, sans-serif;
 	color: #444;
 	margin: 0;
-	}
-	a{
+}
+a{
 		color: #ffffff;
-	}
+}
 	a:hover{
 		text-decoration: none;
 	}
@@ -41,10 +47,13 @@ body{
 		width: 100%;
 	}
 	.ba-section-intro{
-		background: #444 url(../img/pictureall.png);
+		background: #444 url(../img/pictureall.png) no-repeat;
+		background-position: top;
 		color: #ffffff;
 		text-align: left;
 		width: 100%;
+		padding: 120px 0 250px ; 
+	
 	}
 	.ba-menu{
 		list-style: none;
@@ -65,7 +74,7 @@ body{
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		padding-top: 20px;
+		padding-top: 10px;
 	}
 	.ba-button-hollow{
 		display: inline-block;
